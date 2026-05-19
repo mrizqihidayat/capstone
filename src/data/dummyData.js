@@ -22,7 +22,7 @@ export const WHITELIST_EMAILS = [
 
 export const DUMMY_TICKETS = [
   {
-    id: 'T-0047',
+    id: 'T-0001',
     jenis: 'SMS',
     pesan: 'Yth Nasabah CIMB Niaga, akun Anda terdeteksi aktivitas mencurigakan. Segera verifikasi melalui link berikut atau akun Anda akan diblokir dalam 24 jam: http://cimb-verify-secure.xyz/login',
     pelapor: 'Budi Santoso',
@@ -41,7 +41,7 @@ export const DUMMY_TICKETS = [
     adminNotes: '',
   },
   {
-    id: 'T-0046',
+    id: 'T-0002',
     jenis: 'WhatsApp',
     pesan: 'Selamat! Anda terpilih sebagai pemenang program loyalitas CIMB Niaga senilai Rp 5.000.000. Klaim hadiah Anda sebelum kadaluarsa: bit.ly/cimb-hadiah2024. Hubungi CS kami di 0812-9999-1234.',
     pelapor: 'Siti Rahayu',

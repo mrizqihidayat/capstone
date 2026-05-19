@@ -8,6 +8,7 @@ const LANDING_TOP_NAV = [
   { label: 'Investor' },
   { label: 'About Us' },
   { label: 'Laporan Phising', to: '/laporan' },
+  { label: 'Cek Status', to: '/cek-status' },
 ]
 
 export default function Navbar() {

@@ -8,7 +8,10 @@ export function TicketProvider({ children }) {
 
   // TODO: Replace dengan POST /api/reports
   const addTicket = (data) => {
-    const lastId = parseInt(tickets[0]?.id?.split('-')[1] || '47')
+    const lastId = tickets.reduce((max, t) => {
+      const parsed = parseInt(t.id?.split('-')[1], 10)
+      return Number.isNaN(parsed) ? max : Math.max(max, parsed)
+    }, 0)
     const newTicket = {
       id: `T-${String(lastId + 1).padStart(4, '0')}`,
       ...data,
