@@ -6,6 +6,8 @@ import { ProtectedRoute } from './components/ProtectedRoute'
 import LaporanPage from './pages/nasabah/LaporanPage'
 import LandingPage from './pages/nasabah/LandingPage'
 import CekStatusPage from './pages/nasabah/CekStatusPage'
+import ArtikelPage from './pages/nasabah/ArtikelPage'
+import ArticleDetailPage from './pages/nasabah/ArticleDetailPage'
 import LoginPage from './pages/admin/LoginPage'
 import DashboardPage from './pages/admin/DashboardPage'
 import TicketingPage from './pages/admin/TicketingPage'
@@ -18,6 +20,8 @@ export default function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/artikel" element={<ArtikelPage />} />
+            <Route path="/artikel/:slug" element={<ArticleDetailPage />} />
             <Route path="/laporan" element={<LaporanPage />} />
             <Route path="/cek-status" element={<CekStatusPage />} />
             <Route path="/admin" element={<LoginPage />} />
